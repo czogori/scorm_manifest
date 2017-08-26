@@ -2,7 +2,7 @@ defmodule ScormManifestTest do
   use ExUnit.Case
   doctest ScormManifest
 
-  @manifest ~S"""
+  @manifest """
 <?xml version="1.0" standalone="no"?>
 <manifest 
   identifier="TestManifest" 
