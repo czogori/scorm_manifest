@@ -1,4 +1,5 @@
 # ScormManifest
+[![Build Status](https://travis-ci.org/czogori/scorm_manifest.svg?branch=master)](https://travis-ci.org/czogori/scorm_manifest)
 
 **TODO: Add description**
 
