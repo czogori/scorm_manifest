@@ -1,4 +1,6 @@
-%{"elixir_xml_to_map": {:hex, :elixir_xml_to_map, "0.1.1", "57e924cd11731947bfd245ce57d0b8dd8b7168bf8edb20cd156a2982ca96fdfa", [:mix], [{:erlsom, "~>1.4", [hex: :erlsom, optional: false]}]},
+%{"bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], []},
+  "credo": {:hex, :credo, "0.8.6", "335f723772d35da499b5ebfdaf6b426bfb73590b6fcbc8908d476b75f8cbca3f", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, optional: false]}]},
+  "elixir_xml_to_map": {:hex, :elixir_xml_to_map, "0.1.1", "57e924cd11731947bfd245ce57d0b8dd8b7168bf8edb20cd156a2982ca96fdfa", [:mix], [{:erlsom, "~>1.4", [hex: :erlsom, optional: false]}]},
   "erlsom": {:hex, :erlsom, "1.4.1", "53dbacf35adfea6f0714fd0e4a7b0720d495e88c5e24e12c5dc88c7b62bd3e49", [:rebar3], []},
   "quinn": {:hex, :quinn, "1.0.2", "33cfca788e87e62b4d43a5a065c553d2c05a7bd2b8d9883a24d8285cc80c7008", [:mix], []},
   "sweet_xml": {:hex, :sweet_xml, "0.6.5", "dd9cde443212b505d1b5f9758feb2000e66a14d3c449f04c572f3048c66e6697", [:mix], []}}

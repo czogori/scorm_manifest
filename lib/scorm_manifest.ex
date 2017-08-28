@@ -3,8 +3,6 @@ defmodule ScormManifest do
   @moduledoc """
   Documentation for ScormManifest.
   """
-
-  
   def parse(""), do: {:error, "Empty string"}
   def parse(xml) when is_bitstring(xml) do
     r = raw(xml)
@@ -52,7 +50,8 @@ defmodule ScormManifest do
   end
 
   defp default_organization(raw) do
-    [org] = Enum.filter(raw.organizations, fn n -> n.identifier == raw.default_organization end)
+    [org] = Enum.filter(raw.organizations,
+      fn n -> n.identifier == raw.default_organization end)
     org
   end
 
@@ -60,7 +59,7 @@ defmodule ScormManifest do
   defp parse_items([h | t], r) do
     [Map.merge(
       %{
-        id: h.identifier, 
+        id: h.identifier,
         title: h.title,
         datafromlms: h.datafromlms,
         masteryscore: h.masteryscore,
