@@ -28,8 +28,6 @@ defmodule ScormManifest.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:sweet_xml, "~> 0.6.5"},
-     {:quinn, "~> 1.0"},
-    {:elixir_xml_to_map, "~> 0.1"}]
+    [{:sweet_xml, "~> 0.6.5"}]
   end
 end
