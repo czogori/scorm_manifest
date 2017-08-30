@@ -47,11 +47,11 @@ defmodule ScormManifestTest do
 """
 
   test "info multi sco" do
-    expected_map = %{
+    expected_map = %ScormManifest{
       version: '1.2',
       title: 'Test manifest',
       items: [
-        %{
+        %ScormManifestItem{
           id: 'ITEM1',
           title: 'First SCO',
           type: 'sco',
@@ -61,7 +61,7 @@ defmodule ScormManifestTest do
           maxtimeallowed: '0000:50:00',
           timelimitaction: 'exit,message'
         },
-        %{
+        %ScormManifestItem{
           id: 'ITEM2',
           title: 'Second SCO',
           type: 'sco',

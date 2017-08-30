@@ -3,12 +3,16 @@ defmodule ScormManifest do
   @moduledoc """
   Documentation for ScormManifest.
   """
+  defstruct version: nil,
+            title: nil,
+            items: [%ScormManifestItem{}]
+
   def parse(""), do: {:error, "Empty string"}
   def parse(xml) when is_bitstring(xml) do
     r = raw(xml)
     default_organization = default_organization(r)
 
-    map = %{
+    map = %ScormManifest{
       version: r.schemaversion,
       title: default_organization.title,
       items: parse_items(default_organization.items, r.resources)
@@ -58,7 +62,7 @@ defmodule ScormManifest do
   defp parse_items([], _), do: []
   defp parse_items([h | t], r) do
     [Map.merge(
-      %{
+      %ScormManifestItem{
         id: h.identifier,
         title: h.title,
         datafromlms: h.datafromlms,
