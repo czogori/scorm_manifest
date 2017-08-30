@@ -4,4 +4,4 @@ otp_release: 19.3
 sudo: false
 script:
   - mix test
-  - mix credo
+  - mix credo --strict
